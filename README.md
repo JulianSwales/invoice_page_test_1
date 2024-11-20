@@ -1,16 +1,10 @@
 # invoice_page_test_1
 
-A new Flutter project.
+A new Flutter project to demonstrate issues with the Stripe CardField element in Web.
 
-## Getting Started
+To run add a .env file to the root of the project. 
+Insert the line STRIPE_KEY=<stripekey>
 
-This project is a starting point for a Flutter application.
+run: dart run build_runner build -d
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Other option is to replace the Key.key value directly with your Stripe Key in main.dart and remove the env.dart file and the reference. 
